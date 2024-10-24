@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "sms_receive.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/sms",
+        "dest": "sms_receive.py"
+      }
+    ]
+  }
+  
